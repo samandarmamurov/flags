@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  outline: none;
+  border: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: 100%;
+  gap: calc(8px);
+  max-width: 1381px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sitenav {
+  padding-top: 23px;
+  padding-bottom: 24px;
+  box-shadow: -1px 5px 13px 0px rgba(0, 0, 0, 0.55); /* 13 -> 13px */
+}
+.container {
+}
+.sitenav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo-link {
+  width: 234px;
+}
+
+.mode-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+}
+
+/* DARK MODE */
+
+body.dark {
+  background-color: #202c36;
+  color: white;
+}
+
+body.dark .sitenav {
+  background-color: #2b3844;
+}
+body.dark .site-logo-link-img {
+  filter: invert(1);
+}
+
+body.dark main {
+  background-color: #202c36;
+}
+
+body.dark .country,
+body.dark .input-wrap,
+body.dark select {
+  background-color: #2b3844;
+  color: white;
+}
+
+body.dark input {
+  background-color: transparent;
+  color: white;
+}
+
+body.dark input::placeholder {
+  color: white;
+}
+
+body.dark .mode-btn {
+  color: white;
+}
+
+body.dark .input-wrap i {
+  color: white;
+}
+
+
+body.dark .country-text span {
+  color: #d0d0d0;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #f2f2f2;
+}
+.search{
+  padding: 48px;
+}
+.search-container form {
+  display: flex;
+  justify-content: space-between;
+}
+.input-wrap {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 19px 32px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+input {
+  width: 100px;
+}
+
+.input-wrap i {
+  color: #848484;
+}
+select {
+  padding: 18px 24px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+}
+option {
+  border: none;
+}
+.flags-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 75px;
+}
+.country {
+  background-color: #fff;
+  width: 264px;
+  border-radius: 14px;
+}
+
+.country-text {
+  padding: 24px 24px 46px 24px;
+
+  h2 { /* ✅ nested CSS - zamonaviy brauzerlar qo'llab-quvvatlaydi */
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  span {
+    color: #848484;
+  }
+}
+
+.text{
+  margin-bottom: 8px;
+}
